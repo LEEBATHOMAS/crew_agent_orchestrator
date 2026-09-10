@@ -25,7 +25,7 @@ def find_duplicates(text: str) -> list[str]:
 # Current CrewAI talks to models through LiteLLM, not LangChain.
 # Pass a crewai.LLM (or a model string). ChatGoogleGenerativeAI will not validate.
 gemini = LLM(
-    model="gemini/gemini-2.0-flash",
+    model="gemini/gemini-3.6-flash",
     temperature=0.5,
     api_key=os.getenv("GOOGLE_API_KEY"),
 )
